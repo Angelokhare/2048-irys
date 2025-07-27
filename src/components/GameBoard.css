@@ -1,0 +1,73 @@
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-gap: 10px;
+  background: #333;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.score {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.85);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-content {
+  text-align: center;
+}
+
+body {
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+.game-title {
+  font-size: 5vw;
+  color: white;
+  margin-bottom: 1rem;
+  font-family: "WT Skrappa Roman";
+  /* font-family: skrappa; */
+}
+
+.highlight {
+  color: rgb(81, 255, 214);
+  font-family: "WT Skrappa Roman";
+
+}
+
+@media (max-width: 650px) {
+
+
+  .game-title {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 450px) {
+
+
+  .game-title {
+    font-size: 12vw;
+  }
+}
